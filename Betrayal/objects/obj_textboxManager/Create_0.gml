@@ -30,6 +30,9 @@ done = false;
 textAction = -1;
 textNextLine = 1;
 
+responseOption1 = "";
+responseOption2 = "";
+
 skip = false;
 
 textIndex = 0;
