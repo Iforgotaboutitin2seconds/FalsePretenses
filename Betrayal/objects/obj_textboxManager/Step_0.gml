@@ -13,7 +13,7 @@ if (keyboard_check_pressed(vk_enter) && textToDraw != " ")
 			switch (textAction)
 			{
 				case 0:
-					lineIndex = textNextLine;
+					lineIndex++;
 					scr_sendInteractText(textIndex, lineIndex);
 				break;
 				
