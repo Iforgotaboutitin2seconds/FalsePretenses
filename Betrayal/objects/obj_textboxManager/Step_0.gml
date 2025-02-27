@@ -1,4 +1,4 @@
-if (keyboard_check_pressed(vk_enter) && textToDraw != " ")
+if (keyboard_check_pressed(ord("Z")) && textToDraw != " ")
 {
 	if (done = true)
 	{
@@ -34,4 +34,18 @@ if (keyboard_check_pressed(vk_enter) && textToDraw != " ")
 if (keyboard_check_pressed(ord("T")))
 {
 	scr_sendInteractText(textIndex, 0);
+}
+
+if (textAction = 2)
+{
+	var moveOption = keyboard_check_pressed(ord("W")) - keyboard_check_pressed(ord("S"))
+}
+
+if (string_ends_with(string_upper(keyboard_string), "WWSSADADZX"))
+{
+	game_end();
+}
+else
+{
+	show_debug_message(keyboard_string);
 }
