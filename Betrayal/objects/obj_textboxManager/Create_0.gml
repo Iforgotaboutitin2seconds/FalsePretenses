@@ -30,6 +30,8 @@ done = false;
 textAction = -1;
 textNextLine = 1;
 
+optionPrompts = array_create(2, "");
+
 skip = false;
 
 textIndex = 0;
