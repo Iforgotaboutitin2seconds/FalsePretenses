@@ -31,8 +31,11 @@ textAction = -1;
 textNextLine = 1;
 
 optionPrompts = array_create(2, "");
+optionResults = array_create(2, 0);
 
 skip = false;
 
 textIndex = 0;
 lineIndex = 0;
+
+optionLocation = 0;

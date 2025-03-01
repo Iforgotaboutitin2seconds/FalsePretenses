@@ -1,4 +1,4 @@
-if (keyboard_check_pressed(ord("Z")) && textToDraw != " ")
+if (keyboard_check_pressed(ord("Z")) && textToDraw != " " && global.gameState = "Text")
 {
 	if (done = true)
 	{
@@ -23,7 +23,17 @@ if (keyboard_check_pressed(ord("Z")) && textToDraw != " ")
 				break
 				
 				case 1:
-					
+					var me = 0;
+					switch(optionLocation)
+					{
+						case 1:
+							scr_sendInteractText(textIndex, optionResults[1]);
+						break
+						
+						case -1:
+							scr_sendInteractText(textIndex, optionResults[0]);
+						break
+					}
 				break
 			}
 		}
@@ -39,9 +49,9 @@ if (keyboard_check_pressed(ord("T")))
 	scr_sendInteractText(textIndex, 0);
 }
 
-if (textAction = 1)
+if (textAction = 1 && done = true && (keyboard_check_pressed(ord("W")) - keyboard_check_pressed(ord("S"))) != 0)
 {
-	var moveOption = keyboard_check_pressed(ord("W")) - keyboard_check_pressed(ord("S"))
+	optionLocation = keyboard_check_pressed(ord("W")) - keyboard_check_pressed(ord("S"));
 }
 
 if (string_ends_with(string_upper(keyboard_string), "WWSSADADZX"))

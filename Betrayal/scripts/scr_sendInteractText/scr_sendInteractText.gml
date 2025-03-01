@@ -11,8 +11,11 @@ function scr_sendInteractText(textIndex, lineIndex){
 	
 	if (obj_textboxManager.textAction = 1)
 	{
-		obj_textboxManager.optionPrompts[0] = global.textCollection[textIndex][lineIndex + 1][0];
-		obj_textboxManager.optionPrompts[1] = global.textCollection[textIndex][lineIndex + 2][0];
+		for (var i = 0; i < 2; i++)
+		{
+			obj_textboxManager.optionPrompts[i] = global.textCollection[textIndex][lineIndex + 1 + i][0];
+			obj_textboxManager.optionResults[i] = global.textCollection[textIndex][lineIndex + 1 + i][3];
+		}
 	}
 	
 	obj_textboxManager.alarm[0] = obj_textboxManager.textWriteTimer;
