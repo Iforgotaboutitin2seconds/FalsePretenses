@@ -25,7 +25,7 @@ if (textToWrite != "")
 			{
 				draw_sprite_ext(textboxSprite, 0, spawnX, textboxTop - 32 - (64*i), xScale, 0.8, 0, c_white, 1);
 			
-				draw_text(textboxLeft + (textBorder / 4), textboxTop - 51.2 - (64*i), "Option");
+				draw_text(textboxLeft + (textBorder / 4), textboxTop - 51.2 - (64*i), optionPrompts[i]);
 			}
 		}
 		else

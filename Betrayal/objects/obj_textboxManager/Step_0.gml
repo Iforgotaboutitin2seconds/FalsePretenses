@@ -13,14 +13,17 @@ if (keyboard_check_pressed(ord("Z")) && textToDraw != " ")
 			switch (textAction)
 			{
 				case 0:
-					lineIndex++;
-					scr_sendInteractText(textIndex, lineIndex);
+					scr_sendInteractText(textIndex, textNextLine);
 				break;
 				
 				case -1:
 					textToWrite = "";
 					scr_resetTextbox();
 					global.gameState = "Play";
+				break
+				
+				case 1:
+					
 				break
 			}
 		}
@@ -36,7 +39,7 @@ if (keyboard_check_pressed(ord("T")))
 	scr_sendInteractText(textIndex, 0);
 }
 
-if (textAction = 2)
+if (textAction = 1)
 {
 	var moveOption = keyboard_check_pressed(ord("W")) - keyboard_check_pressed(ord("S"))
 }
