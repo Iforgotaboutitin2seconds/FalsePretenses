@@ -23,7 +23,6 @@ if (keyboard_check_pressed(ord("Z")) && textToDraw != " " && global.gameState = 
 				break
 				
 				case 1:
-					var me = 0;
 					switch(optionLocation)
 					{
 						case 1:
@@ -34,6 +33,7 @@ if (keyboard_check_pressed(ord("Z")) && textToDraw != " " && global.gameState = 
 							scr_sendInteractText(textIndex, optionResults[0]);
 						break
 					}
+					optionLocation = 0;
 				break
 			}
 		}

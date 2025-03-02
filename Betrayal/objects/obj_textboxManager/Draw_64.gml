@@ -23,10 +23,20 @@ if (textToWrite != "")
 			
 			for (var i = 0; i < 2; i++)
 			{
-				draw_sprite_ext(textboxSprite, 0, spawnX, textboxTop - 32 - (64*i), xScale, 0.8, 0, c_white, 1);
+				draw_sprite_ext(textboxSprite, 0, spawnX, textboxTop - 32 - (57.6*i), xScale, 0.8, 0, c_white, 1);
 			
-				draw_text(textboxLeft + (textBorder / 4), textboxTop - 51.2 - (64*i), optionPrompts[i]);
+				draw_text(textboxLeft + (textBorder / 4), textboxTop - 51.2 - (57.6*i), optionPrompts[i]);
 			}
+			
+			if (optionLocation = 1)
+			{
+				draw_sprite(spr_textboxArrow, 1, textboxLeft, textboxTop - 57.6);
+			}
+			else if (optionLocation = -1)
+			{
+				draw_sprite(spr_textboxArrow, 1, textboxLeft, textboxTop);
+			}
+			
 		}
 		else
 		{

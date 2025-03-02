@@ -19,6 +19,6 @@ function scr_sendInteractText(textIndex, lineIndex){
 	}
 	
 	obj_textboxManager.alarm[0] = obj_textboxManager.textWriteTimer;
-	global.gameState = "text";
+	global.gameState = "Text";
 	global.paranoidLevel += global.textCollection[textIndex][lineIndex][2];
 }

@@ -11,8 +11,8 @@ function scr_textStorage(){
 		/*6*/["Thank you for allowing me to stay. I hope it wasn't too much trouble.", 0, 0, 7],
 		/*7*/["Ma: No, not at all. We are always happy to accept visitors, though they usually don't stay for long....", 0, 0, 10],
 		/*8*/["It's not like I had a choice, my car did break down", 0, 0, 9],
-		/*9*/["Ma: Regardless, you're here now are you not? Quite lucky that it broke down so close to where people live, it would be a shame if you stayed out in the cold.", 0, 1, 10],
-		/*10*/["By the way, we are preparing dinner, you can head over to the guest bedroom and then join us at the dinner table, sometimes the cooking here is to die for", 0, 2, 11],
+		/*9*/["Ma: Regardless, you're here now are you not? Quite lucky that it broke down so close to where people live, it would be a shame if you stayed out in the cold too long, you could have died.", 0, 1, 10],
+		/*10*/["By the way, we are preparing dinner, head over to the guest bedroom and then join us at the table, sometimes the cooking here is to die for", 0, 2, 11],
 		/*11*/["The room is (gives directions to room) and dinner is in (time until dinner)", -1, 0, 0]
 	]
 	
