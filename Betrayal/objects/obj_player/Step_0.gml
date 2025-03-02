@@ -8,6 +8,20 @@ var yinput = down - up;
 
 move_and_collide(xinput * mySpeed, yinput * mySpeed, obj_wall)
 
+if (xinput != 0 || yinput != 0) { // Moving in any direction
+    sprite_index = spr_player_moving_forward; // Set moving animation
+    if (xinput > 0) {
+        image_xscale = 1;
+        last_direction = 1;
+    } else if (xinput < 0) {
+        image_xscale = -1;
+        last_direction = -1;
+    }
+} else { // Not moving
+    sprite_index = spr_player_facing_forward_idle; // Set idle animation
+    image_xscale = last_direction; // Maintain last direction
+}
+
 // Get camera size
 var cam_width = camera_get_view_width(view_get_camera(0));
 var cam_height = camera_get_view_height(view_get_camera(0));
