@@ -1,2 +1,2 @@
-paranoidBenchmark = [0, 5, 10, 15, 20, 25];
+paranoidBenchmark = [0, 1, 2, 3, 4, 5];
 action = 0;

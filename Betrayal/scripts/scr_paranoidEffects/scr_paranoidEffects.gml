@@ -14,8 +14,8 @@ function scr_paranoidEffects(level){
 	{
 		layer_enable_fx("Effect_2", true);
 		
-		var edge1 = 1.2 - (global.paranoidLevel/30);
-		var edge2 = 2 - (global.paranoidLevel/30);
+		var edge1 = 1.2 - (global.paranoidLevel/6);
+		var edge2 = 2 - (global.paranoidLevel/6);
 		
 		edge1 = clamp(edge1, 0, 1.2);
 		edge2 = clamp(edge2, 1, 2);
@@ -36,7 +36,7 @@ function scr_paranoidEffects(level){
 	{
 		layer_enable_fx("Effect_1", true);
 		
-		var shakingSpeed = 0.1 + ((global.paranoidLevel - obj_paranoidManager.paranoidBenchmark[2]));
+		var shakingSpeed = 0.1 + ((global.paranoidLevel - obj_paranoidManager.paranoidBenchmark[2])*4);
 		
 		shakingSpeed = clamp(shakingSpeed, 0.1, 1.2);
 		
