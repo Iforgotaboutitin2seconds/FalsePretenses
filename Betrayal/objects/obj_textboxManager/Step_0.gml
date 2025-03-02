@@ -60,5 +60,5 @@ if (string_ends_with(string_upper(keyboard_string), "WWSSADADZX"))
 }
 else
 {
-	show_debug_message(keyboard_string);
+	show_debug_message(global.paranoidLevel);
 }

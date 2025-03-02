@@ -1,4 +1,5 @@
 normalFont = [fnt_normalFont_large, fnt_normalFont_small];
+scaryFont = [fnt_scaryFont_large, fnt_scaryFont_small];
 
 global.font = normalFont;
 

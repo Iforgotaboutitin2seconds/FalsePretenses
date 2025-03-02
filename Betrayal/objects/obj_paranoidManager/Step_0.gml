@@ -5,3 +5,4 @@ for (var i = 0; i < array_length(paranoidBenchmark); i++)
 		action = i;
 	}
 }
+scr_paranoidEffects(action);
