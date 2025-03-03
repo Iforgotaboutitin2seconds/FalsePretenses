@@ -7,5 +7,6 @@ if (currentMinutes >= 60)
 if (((currentHour*60) + currentMinutes) = ((endHour*60) + endMinutes) && global.gameState = "Play" && drawClock = true)
 {
 	scr_sendInteractText(15, 0);
+	scr_spawnAvailableEndings();
 	drawClock = false;
 }

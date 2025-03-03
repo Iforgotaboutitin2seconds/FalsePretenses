@@ -1,4 +1,3 @@
-draw_self();
 
 if (distance_to_object(obj_player) < range && interacted = false && global.actionsLeft > 0)
 {

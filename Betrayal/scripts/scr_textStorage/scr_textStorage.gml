@@ -13,7 +13,7 @@ function scr_textStorage(){
 		/*8*/["How come you let people stay here for free? It's awfully generous of you.", 0, 0, 9],
 		/*9*/["Ma: Oh well you see, it's no trouble for us, and we do so love company. We get awfully lonely out here by ourselves sometimes.", 0, 0, 10],
 		/*10*/["By the way, we are preparing dinner, head over to the guest bedroom and then join us at the table, sometimes the cooking here is to die for", 0, 0, 11],
-		/*11*/["The room is (gives directions to room) and dinner is at 6:20 so join us then.", 2, 0, 0]
+		/*11*/["Dinner is at 6:20 so join us then.", 2, 0, 0]
 	]
 	
 	diaryNote1 = [
