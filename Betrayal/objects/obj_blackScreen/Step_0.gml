@@ -22,6 +22,7 @@ else if (ending_index = 0)
 		if (image_alpha = 0)
 		{
 			global.gameState = "Play"
+			obj_actionsManager.drawClock = true;
 			instance_destroy();
 		}
 		else
