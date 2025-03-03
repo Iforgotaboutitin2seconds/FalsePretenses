@@ -2,4 +2,4 @@
 event_inherited();
 
 button_txt = "Play";
-selectedRoom = MainRoom;
+selectedRoom = RoomRemaster;
