@@ -35,6 +35,18 @@ if (keyboard_check_pressed(ord("Z")) && textToDraw != " " && global.gameState = 
 					}
 					optionLocation = 0;
 				break
+				
+				case 2:
+					var blackScreen = instance_create_layer(0, 0, "Instances_2", obj_blackScreen);
+					blackScreen.ending_index = textIndex;
+					textToWrite = "";
+					scr_resetTextbox();
+					global.gameState = "Text";
+				break
+				
+				case 3:
+					game_end();
+				break
 			}
 		}
 	}
@@ -46,7 +58,7 @@ if (keyboard_check_pressed(ord("Z")) && textToDraw != " " && global.gameState = 
 
 if (keyboard_check_pressed(ord("T")))
 {
-	scr_sendInteractText(textIndex, 0);
+	scr_sendInteractText(18, 0);
 }
 
 if (textAction = 1 && done = true && (keyboard_check_pressed(ord("W")) - keyboard_check_pressed(ord("S"))) != 0)

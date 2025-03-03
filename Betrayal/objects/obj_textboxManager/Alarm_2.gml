@@ -1,0 +1,1 @@
+scr_sendInteractText(0, 0);

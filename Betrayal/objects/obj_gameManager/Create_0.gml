@@ -3,9 +3,11 @@ scaryFont = [fnt_scaryFont_large, fnt_scaryFont_small];
 
 global.font = normalFont;
 
-global.actionsLeft = 12;
+global.actionsLeft = 8;
 global.paranoidLevel = 0;
 global.gameState = "Play";
+
+global.availableEndings = array_create(4, false);
 
 scr_textStorage();
 

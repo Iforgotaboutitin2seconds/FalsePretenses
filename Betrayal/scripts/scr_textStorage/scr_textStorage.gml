@@ -5,15 +5,15 @@ function scr_textStorage(){
 		/*0*/["Ma: Hey there, I'm Ma! It's so lovely to finally see someone else here.", 0, 0, 1],
 		/*1*/["It's been so long since anyone has come by that we thought we would go crazy.", 0, 0, 2],
 		/*2*/["*She gives a toothless grin*", 0, 0, 3],
-		/*3*/["(Creepy)", 1, 1, 0],
+		/*3*/["(Creepy)", 1, 0, 0],
 		/*4*/["Thanks", 0, 0, 6],
-		/*5*/["No choice", 0, 0, 8],
+		/*5*/["Why for free?", 0, 0, 8],
 		/*6*/["Thank you for allowing me to stay. I hope it wasn't too much trouble.", 0, 0, 7],
 		/*7*/["Ma: No, not at all. We are always happy to accept visitors, though they usually don't stay for long....", 0, 0, 10],
-		/*8*/["It's not like I had a choice, my car did break down", 0, 0, 9],
-		/*9*/["Ma: Regardless, you're here now are you not? Quite lucky that it broke down so close to where people live, it would be a shame if you stayed out in the cold too long, you could have died.", 0, 1, 10],
-		/*10*/["By the way, we are preparing dinner, head over to the guest bedroom and then join us at the table, sometimes the cooking here is to die for", 0, 2, 11],
-		/*11*/["The room is (gives directions to room) and dinner is in (time until dinner)", -1, 0, 0]
+		/*8*/["How come you let people stay here for free? It's awfully generous of you.", 0, 0, 9],
+		/*9*/["Ma: Oh well you see, it's no trouble for us, and we do so love company. We get awfully lonely out here by ourselves sometimes.", 0, 0, 10],
+		/*10*/["By the way, we are preparing dinner, head over to the guest bedroom and then join us at the table, sometimes the cooking here is to die for", 0, 0, 11],
+		/*11*/["The room is (gives directions to room) and dinner is at 6:20 so join us then.", 2, 0, 0]
 	]
 	
 	diaryNote1 = [
@@ -64,5 +64,79 @@ function scr_textStorage(){
 		["Just a normal fireplace that currently has some dying embers. On the mantle, there's a picture of Ma and Pa, as well as one of Pa holding a huge fish. Not much else strikes your interest.", -1, 0, 0]
 	];
 	
-	global.textCollection = [introDialogue, diaryNote1, diaryNote2, diaryNote3, diaryNote4, diaryNote5, diaryNote6, diaryNote7, knifeInspect, rockingChairInspect, dresserInspect, babyCribInspect, fireplaceInspect];
+	secretNote1 = [
+		["I've been investigating this family ever since I read the notes left by the previous inhabitant.", 0, 0, 1],
+		["I found a nice listening spot and learned that Ma is mad at Pa for cutting his hand while working.", 0, 0, 2],
+		["I wonder if that's what the first was talking about with the experience in the kitchen, Ma, did say that he 'always cuts himself'.", -1, -2, 0]
+	];
+	
+	secretNote2 = [
+		["I also followed the notes, there is nothing to worry about in the basement, trust me.", 0, 0, 1],
+		["The person who wrote the other entries ran away before they could see what was down there but it's okay.", 0, 0, 2],
+		["Trust me, trust them.", -1, -2, 0]
+	];
+	
+	announcement = [
+		["Dinner's ready!", -1, 0, 0]
+	];
+	
+	endingRun = [
+		["Will you run away?", 1, 0, 1],
+		["Yes", 0, 0, 4],
+		["No", 0, 0, 3],
+		["You decide not to run away.", -1, 0, 0],
+		["You ready to sprint out the door.", 2, 0, 0],
+		
+		["You run out the door at full speed.", 0, 0, 6],
+		["And you run.", 0, 0, 7],
+		["And run.", 0, 0, 8],
+		["Voices are heard in the distance as you run.", 0, 0, 9],
+		["But you run further.", 0, 0, 10],
+		["And further.", 0, 0, 11],
+		["And further.", 0, 0, 12],
+		["End?", 3, 0, 0]
+	];
+	
+	endingDinner = [
+		["Do you plan to trust them and have dinner?", 1, 0, 1],
+		["Yes", 0, 0, 4],
+		["No", 0, 0, 3],
+		["You decide not to open the door.", -1, 0, 0],
+		["You walk inside.", 2, 0, 0],
+		
+		["The table is decorated in a variety of wonderful dishes, most made of fish.", 0, 0, 6],
+		["Dinner was incredible.", 0, 0, 7],
+		["The family then approaches you with a package wrapped in paper.", 0, 0, 8],
+		["Its a hand carved frame.", 0, 0, 9],
+		["Pa: I worked on it in the secret workshop behind the bookcase because I saw you sneaking around, couldn't spoil the surprise, nearly cost me an arm, but I managed to get it at a cheaper price.", 0, 0, 10],
+		["He holds up a bandaged hand.", 0, 0, 11],
+		["Everybody laughs.", 0, 0, 12],
+		["You enjoy the time you have left with this family.", 0, 0, 13],
+		["The End.", 3, 0, 0]
+	];
+	
+	endingHide = [
+		["Do you plan to hide until it is all over?", 1, 0, 1],
+		["Yes", 0, 0, 4],
+		["No", 0, 0, 3],
+		["You decide not to hide.", -1, 0, 0],
+		["You dive under the bed.", 2, 0, 0],
+		
+		["You hold your breath as the various family members search the rooms.", 0, 0, 6],
+		["From your position you can barely hear a thing.", 0, 0, 7],
+		["Regardless of anything you hold your ground, they will not get you.", 0, 0, 8],
+		["End.", 3, 0, 0]
+	];
+	
+	endingAttack = [
+		["Fight back?", 1, 0, 1],
+		["Yes", 0, 0, 4],
+		["No", 0, 0, 3],
+		["You sure...?", -1, 0, 0],
+		["You fight back.", 2, 0, 0],
+		
+		["Their End.", 3, 0, 0]
+	];
+	
+	global.textCollection = [introDialogue, diaryNote1, diaryNote2, diaryNote3, diaryNote4, diaryNote5, diaryNote6, diaryNote7, knifeInspect, rockingChairInspect, dresserInspect, babyCribInspect, fireplaceInspect, secretNote1, secretNote2, announcement, endingRun, endingDinner, endingHide, endingAttack];
 }

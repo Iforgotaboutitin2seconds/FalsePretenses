@@ -39,3 +39,5 @@ textIndex = 0;
 lineIndex = 0;
 
 optionLocation = 0;
+
+alarm[2] = 2;
